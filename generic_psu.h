@@ -210,6 +210,18 @@ void generic_psu_set_hw_event(struct generic_psu *self, uint8_t event)
 	}
 }
 
+void generic_psu_set_hw_out_voltage_V(struct generic_psu *self,
+				      uint16_t voltage)
+{
+	self->_out_voltage_V = voltage;
+}
+
+void generic_psu_set_hw_out_current_A(struct generic_psu *self,
+				      int16_t current)
+{
+	self->_out_current_A = current;
+}
+
 /* Getters */
 
 uint16_t generic_psu_get_out_voltage_V(struct generic_psu *self)
