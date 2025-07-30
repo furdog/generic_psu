@@ -159,7 +159,7 @@ void generic_psu_init(struct generic_psu *self)
 /* Ack setting has been configured */
 void generic_psu_set_ack_settings(struct generic_psu *self)
 {
-	self->_flags &= GENERIC_PSU_FLAG_ACK_SETTINGS;
+	self->_flags |= GENERIC_PSU_FLAG_ACK_SETTINGS;
 }
 
 void generic_psu_set_out_voltage_V(struct generic_psu *self, uint16_t voltage)
