@@ -222,6 +222,9 @@ int16_t generic_psu_get_out_current_A(struct generic_psu *self)
 	return self->_out_current_A;
 }
 
+
+/* Update */
+
 enum generic_psu_event generic_psu_update(struct generic_psu *self,
 					  uint32_t delta_time_ms)
 {
